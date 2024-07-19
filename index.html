@@ -11,19 +11,26 @@
 </head>
 
 <body class="font-sans text-gray-700">
-    <header class="bg-white py-6 shadow-md">
+    <header class="bg-white py-8 shadow-md">
         <div class="container mx-auto flex items-center justify-between px-4">
             <img src="logo.png" alt="NkHRsolutions Logo" class="w-24" />
             <nav class="hidden space-x-6 md:flex">
                 <a href="#" class="hover:text-blue-500">Home</a>
-                <a href="#" class="hover:text-blue-500">Services</a>
                 <a href="#" class="hover:text-blue-500">About Us</a>
                 <a href="#" class="hover:text-blue-500">Contact</a>
             </nav>
-            <button class="md:hidden">
+            <button id="nav-btn" class="md:hidden ">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
+            <nav class="fixed top-0  right-0 h-0 w-screen mt-[140px] bg-white opacity-[0.80] z-50  overflow-hidden transition-all duration-300 ease-in-out md:hidden" id="mobile-nav">
+                <ul class="flex flex-col space-y-6 py-8 px-6">
+                    <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+
     </header>
 
     <section class="bg-blue-100 py-16">
@@ -31,16 +38,16 @@
             <h1 class="mb-4 text-4xl font-bold md:text-5xl">Streamlining HR Processes for Your Success</h1>
             <p class="mb-8 text-lg md:text-xl">Trusted partner for comprehensive HR solutions, from talent acquisition
                 to payroll management and beyond.</p>
-            <a href="#" class="rounded-full bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-600"> Explore
+            <a href="srvcs" class="rounded-full bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-600"> Explore
                 Our Services </a>
         </div>
     </section>
  <!-- services section  -->
-    <section  class="py-16">
+    <section class="py-16">
         <div class="container mx-auto px-4">
             <h2 class="mb-8 text-center text-3xl font-bold md:text-4xl">Our HR Services</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div
+                <div id="srvcs"
                     class="rounded-lg bg-white p-6 text-center shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300 ease-in-out">
                     <i class="fas fa-money-check-alt text-3xl text-blue-500 mb-4"></i>
                     <h3 class="text-xl font-semibold mb-2">Payroll Management</h3>
@@ -125,6 +132,7 @@
             </div>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
