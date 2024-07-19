@@ -4,6 +4,7 @@ const mobileNav = document.getElementById('mobile-nav');
 navBtn.addEventListener("click",()=>{
     if(btn===true){
         mobileNav.style.height = "auto";
+        mobileNav.style.marginTop = "140px"; 
         btn=false;
     }
     else{
